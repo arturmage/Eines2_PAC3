@@ -1,0 +1,126 @@
+@use "../variables" as v;
+
+@layer pages {
+  .page--article .page__main {
+    padding-block: v.space("lg");
+  }
+
+  .article-page {
+    background-color: transparent;
+  }
+
+  .article-hero {
+    background-color: hwb(210deg 96% 0%);
+    margin-bottom: v.space("xl");
+    padding-block: clamp(3rem, 10svh, 5rem);
+  }
+
+  .article-hero__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: v.space("md");
+    margin-inline: auto;
+    max-width: 60rem;
+    text-align: center;
+  }
+
+  .article-hero__image img {
+    border-radius: v.$radius-md;
+    max-width: 6rem;
+  }
+
+  .article-hero__kicker {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .article-hero__title {
+    font-family: v.$font-family-heading;
+    font-size: clamp(2rem, 3.2vw, 2.6rem);
+    margin: 0;
+  }
+
+  .article-hero__meta {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .article-body {
+    display: flex;
+    flex-direction: column;
+    gap: v.space("xl");
+    margin-block: v.space("xl");
+  }
+
+  .article-layout {
+    align-items: flex-start;
+    display: grid;
+    gap: v.space("lg");
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
+  }
+
+  .article-layout__lede {
+    font-family: v.$font-family-heading;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .article-layout__col--right p {
+    line-height: 1.7;
+    margin-block: 0.75rem;
+  }
+
+  .article-layout__col--right blockquote {
+    border-left: 4px solid v.$color-accent;
+    font-style: italic;
+    margin-block: 1.25rem;
+    padding-left: 1rem;
+  }
+
+  .article-layout__col--right:has(blockquote) {
+    border-top: 1px solid v.$color-border-subtle;
+    padding-top: v.space("md");
+  }
+
+  .article-body__feature img {
+    border-radius: v.$radius-lg;
+    display: block;
+    width: 100%;
+  }
+
+  .article-body__section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .article-body__section p {
+    margin-block: 0.75rem;
+  }
+
+  .article-body__section ul {
+    margin-block: 0.75rem 0;
+    padding-left: 1.2rem;
+  }
+
+  .article-body__sidebar {
+    background-color: hwb(40deg 95% 10%);
+    border-radius: v.$radius-md;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 5%);
+    font-size: 0.95rem;
+    padding: v.space("md");
+  }
+
+  @media (width <= 48rem) {
+    .article-layout {
+      gap: v.space("md");
+      grid-template-columns: 1fr;
+    }
+
+    .article-layout__lede {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@use "../variables" as v;
+
+@layer pages {
+  .page--home .page__main {
+    padding-block: v.space("xl");
+  }
+
+  .home-poster {
+    background-color: v.$color-surface;
+    border-radius: v.$radius-lg;
+    box-shadow: v.$shadow-soft;
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    gap: v.space("md");
+    margin-block: v.space("lg");
+    margin-inline: auto;
+    max-width: min(72rem, 100% - 2rem);
+    padding: clamp(1.75rem, 6svh, 3.5rem);
+  }
+
+  @supports (display: grid) {
+    .home-poster {
+      align-items: center;
+      display: grid;
+      gap: v.space("md") v.space("lg");
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-rows: auto auto 1fr auto;
+      /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+      grid-template-areas:
+        "badge   badge   badge   image   image   image"
+        "title   title   title   image   image   image"
+        "subtitle subtitle info   info    nav     nav"
+        "footer  footer  footer  footer  footer  footer";
+    }
+  }
+
+
+
+  .home-poster__badge {
+    align-self: flex-start;
+    background-color: v.$color-accent-soft;
+    border-radius: 999px;
+    color: #3b1c08;
+    font-size: 0.8rem;
+    font-weight: 600;
+    grid-area: badge;
+    letter-spacing: 0.08em;
+    padding-block: 0.35rem;
+    padding-inline: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .home-poster__title {
+    font-family: v.$font-family-heading;
+    font-size: clamp(2.2rem, 3.4vw, 3.4rem);
+    grid-area: title;
+    line-height: 1.05;
+    margin: 0;
+  }
+
+  .home-poster__subtitle {
+    font-size: 1.05rem;
+    grid-area: subtitle;
+    margin: 0;
+    max-width: 28rem;
+  }
+
+  .home-poster__info {
+    font-weight: 600;
+    grid-area: info;
+  }
+
+  .home-poster__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    grid-area: nav;
+  }
+
+  .home-poster__image {
+    align-self: stretch;
+    grid-area: image;
+
+    img {
+      block-size: 100%;
+      border-radius: v.$radius-lg;
+      inline-size: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .home-poster__footer-text {
+    font-size: 0.9rem;
+    grid-area: footer;
+    opacity: 0.8;
+  }
+
+  @container (max-width: 50rem) {
+    .home-poster {
+      @supports (display: grid) {
+        grid-template-areas:
+          "badge"
+          "title"
+          "subtitle"
+          "image"
+          "info"
+          "nav"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+
+      text-align: left;
+    }
+
+    .home-poster__nav {
+      justify-content: flex-start;
+    }
+  }
+}
