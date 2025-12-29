@@ -5,22 +5,22 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
-@use "sass:meta";
-@use "./variables" as v;
 
-/* Cascade order */
-@layer reset, bootstrap, base, layout, components, pages, utilities;
+@import "tailwindcss/index.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 
-/* Layer Bootstrap + FontAwesome */
-@layer bootstrap {
-  $primary: v.$color-accent;
-  $secondary: v.$color-dark;
-  $body-bg: v.$color-body-bg;
-  $body-color: v.$color-text;
-  $font-family-sans-serif: v.$font-family-sans-serif;
-  $border-radius-lg: v.$radius-lg;
-  $border-radius: v.$radius-md;
+@theme {
+  --font-sans: "Montserrat", system-ui, -apple-system, blinkmacsystemfont,
+    "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 
-  @import "~bootstrap/scss/bootstrap";
-  @import "~@fortawesome/fontawesome-free/css/all.min.css";
+  --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
+
+  --color-accent: hwb(20deg 15% 20%);
+  --color-dark: #2b1a14;
+  --color-text: #322318;
+  --color-body-bg: hwb(0deg 92% 8% / 52.7%);
+  --color-border-subtle: rgb(0 0 0 / 6%);
+
+  --shadow-soft: 0 0.75rem 2rem rgb(0 0 0 / 12%);
 }
+

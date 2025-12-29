@@ -1,0 +1,64 @@
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply min-h-dvh font-sans;
+    color: var(--color-text);
+    background-color: var(--color-body-bg);
+  }
+
+  img {
+    @apply block h-auto max-w-full;
+  }
+
+  a {
+    @apply underline decoration-[0.12em] hover:no-underline focus-visible:no-underline;
+    color: var(--color-accent);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply text-white;
+    background-color: var(--color-accent);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .btn-primary:hover {
+    opacity: 0.92;
+  }
+
+  .btn-outline {
+    @apply bg-white/70;
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-dark);
+  }
+
+  .btn-outline:hover {
+    @apply bg-white;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-xs font-semibold;
+    color: var(--color-dark);
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .card {
+    @apply rounded-2xl bg-white/80 p-6;
+    border: 1px solid var(--color-border-subtle);
+    box-shadow: var(--shadow-soft);
+  }
+}
