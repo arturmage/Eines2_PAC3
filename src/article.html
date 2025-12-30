@@ -15,7 +15,7 @@
         <header class="grid gap-8 lg:grid-cols-[160px_1fr] lg:items-center">
           <figure class="overflow-hidden rounded-2xl bg-black/5 p-2">
             <img
-              class="w-full rounded-xl"
+              class="w-full rounded-xl object-cover"
               src="./assets/images/cuina-catalana.jpg"
               alt="Cuina catalana, logo"
               loading="lazy"
@@ -25,16 +25,15 @@
           <div>
             <p class="badge w-fit">
               <i class="fa-regular fa-newspaper" aria-hidden="true"></i>
-              Nota de premsa
+              Nota
             </p>
 
-            <h1 class="mt-4 text-2xl font-extrabold tracking-tight sm:text-3xl" style="color: var(--color-dark);">
-              Les Jornades de Cuina Tradicional recuperen els plats de sempre
-              <span class="block">amb una mirada actual</span>
+            <h1 class="mt-4 text-2xl font-extrabold tracking-tight text-black sm:text-3xl">
+              Les jornades recuperen els plats de sempre amb una mirada actual
             </h1>
 
             <p class="mt-3 text-sm text-black/60">
-              per <span class="font-semibold">Cuines Unides</span> · 5 de març de 2026
+              5 de març de 2026
             </p>
           </div>
         </header>
@@ -42,26 +41,18 @@
         <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
           <div>
             <h2 class="text-lg font-extrabold tracking-tight text-black/80">
-              Durant tres dies, cuineres, pagesos i veïnat de Reus es trobaran per
-              compartir receptes, històries i maneres de viure la cuina de proximitat.
+              Tres dies de xerrades, tallers i tastos per posar en valor la cuina de proximitat.
             </h2>
 
             <div class="mt-5 space-y-4 text-base leading-relaxed text-black/70">
               <p>
-                Les Jornades de Cuina Tradicional Catalana neixen amb la voluntat de donar veu a la cuina que es fa a casa,
-                als restaurants petits i a les masies del territori. Una cuina que no sempre surt a les guies, però que forma
-                part de la memòria de molts barris i famílies.
-              </p>
-
-              <p>
-                Al llarg de tres dies, el Centre Cívic del Carme acollirà xerrades, demostracions de cuina en directe i tallers
-                participatius. Hi participaran cuineres de fonda, pagesos, col·lectius veïnals i projectes que treballen per una
-                alimentació més justa i arrelada
+                Les Jornades de Cuina Tradicional Catalana neixen amb la voluntat de donar veu a la cuina que es fa a casa
+                i als projectes que mantenen viu el receptari popular.
               </p>
 
               <figure class="overflow-hidden rounded-2xl bg-black/5 p-2">
                 <img
-                  class="w-full rounded-xl"
+                  class="w-full rounded-xl object-cover"
                   src="./assets/images/article-detail.jpg"
                   alt="Detall d’un plat de cassola tradicional"
                   loading="lazy"
@@ -69,30 +60,46 @@
               </figure>
 
               <p>
-                El programa combina xerrades divulgatives, demostracions de cuina en directe i tallers participatius per a tots
-                els públics. L’objectiu és que qualsevol persona pugui endur-se, com a mínim, una recepta nova i una història per
-                explicar a casa.
+                El programa combina demostracions de cuina en directe, espais divulgatius i activitats participatives.
+                L’objectiu és que qualsevol persona pugui endur-se una idea aplicable a casa.
               </p>
             </div>
 
-            <h2 class="mt-10 text-xl font-extrabold tracking-tight" style="color: var(--color-dark);">
+            <h2 class="mt-10 text-xl font-extrabold tracking-tight text-black">
               Un programa per tastar, escoltar i aprendre
             </h2>
 
-            <p class="mt-4 text-base leading-relaxed text-black/70">
-              De bon matí, les jornades arrencaran amb xerrades sobre producte de temporada, sostenibilitat i memòria gastronòmica.
-              Al migdia, la protagonista serà la cuina de cassola, amb demostracions a càrrec de diferents xefs del territori.
-              A la tarda, s’hi afegiran tallers per a famílies i espais de tast comentat.
-            </p>
-
             <ul class="mt-6 list-disc space-y-2 pl-5 text-base text-black/70">
-              <li>Tallers pràctics de cuina tradicional per a tots els nivells.</li>
-              <li>Xerrades sobre producte de proximitat, pagesia i sostenibilitat.</li>
-              <li>Tast de plats emblemàtics reinterpretats per cuineres locals.</li>
+              <li>Cuina de cassola i de temporada.</li>
+              <li>Producte local i sostenibilitat.</li>
+              <li>Tallers per a tots els nivells.</li>
             </ul>
           </div>
 
-          <include src="./views/components/article-feature.html"></include>
+          <aside class="card" aria-label="Resum">
+            <h2 class="text-base font-extrabold text-black">Resum</h2>
+
+            <dl class="mt-4 grid gap-3 text-sm">
+              <div class="flex items-center justify-between gap-4 border-b border-black/5 pb-2">
+                <dt class="text-black/60">Dates</dt>
+                <dd class="font-semibold text-black/80">12–14 d’abril 2026</dd>
+              </div>
+              <div class="flex items-center justify-between gap-4 border-b border-black/5 pb-2">
+                <dt class="text-black/60">Lloc</dt>
+                <dd class="font-semibold text-black/80">Reus</dd>
+              </div>
+              <div class="flex items-center justify-between gap-4">
+                <dt class="text-black/60">Accés</dt>
+                <dd class="font-semibold text-black/80">Gratuït</dd>
+              </div>
+            </dl>
+
+            <div class="mt-5">
+              <a class="btn btn-outline w-full no-underline" href="index.html">
+                Tornar a inici
+              </a>
+            </div>
+          </aside>
         </div>
       </article>
     </main>

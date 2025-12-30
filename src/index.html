@@ -14,52 +14,44 @@
       <section class="card">
         <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
-            <include src="./views/components/hero-badge.html"></include>
+            <p class="badge w-fit">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              1a edició · 2026
+            </p>
 
-            <h1 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl" style="color: var(--color-dark);">
+            <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
               Jornades de Cuina Tradicional Catalana
             </h1>
 
             <p class="mt-4 text-base leading-relaxed text-black/70">
-              Tres dies de xerrades, tallers i tastos per recuperar els sabors de sempre i descobrir nous formats per explicar-los.
+              Un espai per recuperar receptes, tècniques i històries de la cuina d’aquí, amb una mirada actual.
             </p>
 
             <p class="mt-4 text-sm font-semibold text-black/70">
-              12–14 d’abril · Centre Cívic del Carme · Reus
+              12–14 d’abril · Reus
             </p>
 
-            <nav class="mt-6 flex flex-wrap gap-3" aria-label="Pàgines del lloc">
-              <a href="speakers.html" class="btn btn-primary no-underline">
-                <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
-                Ponents i xerrades
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="article.html" class="btn btn-primary no-underline">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                Llegir l’article
               </a>
-
-              <a href="article.html" class="btn btn-outline no-underline">
-                Què són les jornades?
+              <a href="ia-figma.html" class="btn btn-outline no-underline">
+                Concursants
               </a>
-
-              <a href="info.html" class="btn btn-outline no-underline">
-                Programa i inscripcions
-              </a>
-            </nav>
-
-            <p class="mt-6 text-xs leading-relaxed text-black/60">
-              Organitza: Ajuntament de Reus · Col·labora: Associació de Cuina Tradicional del Camp de Tarragona.
-            </p>
+            </div>
           </div>
 
           <figure class="overflow-hidden rounded-2xl bg-black/5 p-2">
             <img
-              class="w-full rounded-xl"
+              class="w-full rounded-xl object-cover"
               src="./assets/images/escudella.png"
-              alt="Taula amb plats de cuina tradicional catalana"
+              alt="Plat de cuina tradicional catalana"
               loading="lazy"
             />
           </figure>
         </div>
       </section>
-
-      <include src="./views/components/home-cta.html"></include>
     </main>
 
     <include src="./views/footer.html"></include>
