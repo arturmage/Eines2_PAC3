@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <title>Concursants</title>
+  </head>
+
+  <body>
+    <include src="./views/header-ia.html"></include>
+
+    <div class="bg-white">
+      <main>
+        <section class="container-page pb-6 pt-10 text-center">
+          <h1 class="text-4xl font-extrabold tracking-tight text-black sm:text-5xl">
+            Concursants
+          </h1>
+          <p class="mx-auto mt-4 max-w-2xl text-sm text-black/60">
+            En aquesta secció es presenten les receptes dels millors concursants
+          </p>
+        </section>
+
+        <section class="container-page pb-12">
+          <figure class="overflow-hidden rounded-2xl">
+            <img
+              src="./assets/images/article-detail.jpg"
+              alt="Taula amb plats i ingredients"
+              class="h-auto w-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+        </section>
+
+        <section class="container-page pb-16">
+          <h2 class="text-lg font-extrabold text-black">Les receptes</h2>
+          <p class="mt-2 text-sm text-black/60">
+            Aquestes són les receptes dels millors concursants
+          </p>
+
+          <div class="mt-8 grid gap-6 md:grid-cols-3">
+            <include src="./views/components/figma-recipe-card-1.html"></include>
+            <include src="./views/components/figma-recipe-card-2.html"></include>
+            <include src="./views/components/figma-recipe-card-3.html"></include>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

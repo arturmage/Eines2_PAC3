@@ -6,50 +6,60 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <title>Cuina Tradicional · Inici</title>
   </head>
-  <body class="site-body">
+
+  <body>
     <include src="./views/header-home.html"></include>
 
-    <main class="page page--home">
-      <section class="home-poster container">
-        <p class="home-poster__badge">1a edició · 2026</p>
+    <main class="container-page py-10">
+      <section class="card">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <include src="./views/components/hero-badge.html"></include>
 
-        <h1 class="home-poster__title">
-          Jornades de Cuina Tradicional Catalana
-        </h1>
+            <h1 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl" style="color: var(--color-dark);">
+              Jornades de Cuina Tradicional Catalana
+            </h1>
 
-        <p class="home-poster__subtitle">
-          Tres dies de xerrades, tallers i tastos per recuperar els sabors de
-          sempre i descobrir nous formats per explicar-los.
-        </p>
+            <p class="mt-4 text-base leading-relaxed text-black/70">
+              Tres dies de xerrades, tallers i tastos per recuperar els sabors de sempre i descobrir nous formats per explicar-los.
+            </p>
 
-        <p class="home-poster__info">
-          12–14 d’abril · Centre Cívic del Carme · Reus
-        </p>
+            <p class="mt-4 text-sm font-semibold text-black/70">
+              12–14 d’abril · Centre Cívic del Carme · Reus
+            </p>
 
-        <nav class="home-poster__nav" aria-label="Pàgines del lloc">
-          <a href="speakers.html" class="btn btn-primary btn-lg">
-            Ponents i xerrades
-          </a>
-          <a href="article.html" class="btn btn-outline-secondary btn-lg">
-            Què són les jornades?
-          </a>
-          <a href="info.html" class="btn btn-outline-secondary btn-lg">
-            Programa i inscripcions
-          </a>
-        </nav>
+            <nav class="mt-6 flex flex-wrap gap-3" aria-label="Pàgines del lloc">
+              <a href="speakers.html" class="btn btn-primary no-underline">
+                <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
+                Ponents i xerrades
+              </a>
 
-        <figure class="home-poster__image">
-          <img
-            src="./assets/images/escudella.png"
-            alt="Taula amb plats de cuina tradicional catalana"
-          />
-        </figure>
+              <a href="article.html" class="btn btn-outline no-underline">
+                Què són les jornades?
+              </a>
 
-        <p class="home-poster__footer-text">
-          Organitza: Ajuntament de Reus · Col·labora: Associació de Cuina
-          Tradicional del Camp de Tarragona.
-        </p>
+              <a href="info.html" class="btn btn-outline no-underline">
+                Programa i inscripcions
+              </a>
+            </nav>
+
+            <p class="mt-6 text-xs leading-relaxed text-black/60">
+              Organitza: Ajuntament de Reus · Col·labora: Associació de Cuina Tradicional del Camp de Tarragona.
+            </p>
+          </div>
+
+          <figure class="overflow-hidden rounded-2xl bg-black/5 p-2">
+            <img
+              class="w-full rounded-xl"
+              src="./assets/images/escudella.png"
+              alt="Taula amb plats de cuina tradicional catalana"
+              loading="lazy"
+            />
+          </figure>
+        </div>
       </section>
+
+      <include src="./views/components/home-cta.html"></include>
     </main>
 
     <include src="./views/footer.html"></include>

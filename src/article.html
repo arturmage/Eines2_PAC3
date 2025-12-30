@@ -6,125 +6,93 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <title>Cuina Tradicional · Article</title>
   </head>
-  <body class="site-body">
+
+  <body>
     <include src="./views/header-article.html"></include>
 
-    <main class="page page--article">
-      <article class="article-page">
-        <header class="article-hero">
-          <div class="article-hero__inner container">
-            <figure class="article-hero__image">
-              <img
-                src="./assets/images/cuina-catalana.jpg"
-                alt="Cuina catalana, logo"
-              />
-            </figure>
+    <main class="container-page py-10">
+      <article class="card">
+        <header class="grid gap-8 lg:grid-cols-[160px_1fr] lg:items-center">
+          <figure class="overflow-hidden rounded-2xl bg-black/5 p-2">
+            <img
+              class="w-full rounded-xl"
+              src="./assets/images/cuina-catalana.jpg"
+              alt="Cuina catalana, logo"
+              loading="lazy"
+            />
+          </figure>
 
-            <p class="article-hero__kicker">Nota de premsa</p>
+          <div>
+            <p class="badge w-fit">
+              <i class="fa-regular fa-newspaper" aria-hidden="true"></i>
+              Nota de premsa
+            </p>
 
-            <h1 class="article-hero__title">
+            <h1 class="mt-4 text-2xl font-extrabold tracking-tight sm:text-3xl" style="color: var(--color-dark);">
               Les Jornades de Cuina Tradicional recuperen els plats de sempre
-              amb una mirada actual
+              <span class="block">amb una mirada actual</span>
             </h1>
 
-            <p class="article-hero__meta">
-              per
-              <span class="article-hero__author">
-                Cuines Unides
-              </span>
-              · 5 de març de 2026
+            <p class="mt-3 text-sm text-black/60">
+              per <span class="font-semibold">Cuines Unides</span> · 5 de març de 2026
             </p>
           </div>
         </header>
 
-        <div class="article-body container">
-          <section
-            class="article-layout"
-            aria-label="Introducció a les jornades"
-          >
-            <div class="article-layout__col article-layout__col--left">
-              <h2 class="article-layout__lede">
-                Durant tres dies, cuineres, pagesos i veïnat de Reus es trobaran per
-                compartir receptes, històries i maneres de viure la cuina de proximitat.
-              </h2>
-            </div>
+        <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
+          <div>
+            <h2 class="text-lg font-extrabold tracking-tight text-black/80">
+              Durant tres dies, cuineres, pagesos i veïnat de Reus es trobaran per
+              compartir receptes, històries i maneres de viure la cuina de proximitat.
+            </h2>
 
-            <div class="article-layout__col article-layout__col--right">
+            <div class="mt-5 space-y-4 text-base leading-relaxed text-black/70">
               <p>
-                Les Jornades de Cuina Tradicional Catalana neixen amb la voluntat
-                de donar veu a la cuina que es fa a casa, als restaurants petits i a les
-                masies del territori. Una cuina que no sempre surt a les guies, però
-                que forma part de la memòria de molts barris i famílies.
+                Les Jornades de Cuina Tradicional Catalana neixen amb la voluntat de donar veu a la cuina que es fa a casa,
+                als restaurants petits i a les masies del territori. Una cuina que no sempre surt a les guies, però que forma
+                part de la memòria de molts barris i famílies.
               </p>
 
               <p>
-                Al llarg de tres dies, el Centre Cívic del Carme acollirà xerrades,
-                demostracions de cuina en directe i tallers participatius. Hi
-                participaran cuineres de fonda, pagesos, col·lectius veïnals i projectes
-                que treballen per una alimentació més justa i arrelada 
+                Al llarg de tres dies, el Centre Cívic del Carme acollirà xerrades, demostracions de cuina en directe i tallers
+                participatius. Hi participaran cuineres de fonda, pagesos, col·lectius veïnals i projectes que treballen per una
+                alimentació més justa i arrelada
               </p>
 
-              <blockquote>
-                “La cuina tradicional és memòria, cultura i comunitat. Aquestes
-                jornades són una excusa per tornar-nos a trobar al voltant de la
-                taula.”
-              </blockquote>
+              <figure class="overflow-hidden rounded-2xl bg-black/5 p-2">
+                <img
+                  class="w-full rounded-xl"
+                  src="./assets/images/article-detail.jpg"
+                  alt="Detall d’un plat de cassola tradicional"
+                  loading="lazy"
+                />
+              </figure>
 
               <p>
-                El programa combina xerrades divulgatives, demostracions de
-                cuina en directe i tallers participatius per a tots els
-                públics. L’objectiu és que qualsevol persona pugui endur-se, com
-                a mínim, una recepta nova i una història per explicar a casa.
+                El programa combina xerrades divulgatives, demostracions de cuina en directe i tallers participatius per a tots
+                els públics. L’objectiu és que qualsevol persona pugui endur-se, com a mínim, una recepta nova i una història per
+                explicar a casa.
               </p>
             </div>
-          </section>
 
-          <figure class="article-body__feature">
-            <img
-              src="./assets/images/article-detail.jpg"
-              alt="Detall d’un plat de cassola tradicional"
-            />
-          </figure>
+            <h2 class="mt-10 text-xl font-extrabold tracking-tight" style="color: var(--color-dark);">
+              Un programa per tastar, escoltar i aprendre
+            </h2>
 
-          <section class="article-body__section">
-            <h2>Un programa per tastar, escoltar i aprendre</h2>
-
-            <p>
-              De bon matí, les jornades arrencaran amb xerrades sobre producte
-              de temporada, sostenibilitat i memòria gastronòmica. Al migdia,
-              la protagonista serà la cuina de cassola, amb demostracions a
-              càrrec de diferents xefs del territori. A la tarda, s’hi afegiran
-              tallers per a famílies i espais de tast comentat.
+            <p class="mt-4 text-base leading-relaxed text-black/70">
+              De bon matí, les jornades arrencaran amb xerrades sobre producte de temporada, sostenibilitat i memòria gastronòmica.
+              Al migdia, la protagonista serà la cuina de cassola, amb demostracions a càrrec de diferents xefs del territori.
+              A la tarda, s’hi afegiran tallers per a famílies i espais de tast comentat.
             </p>
 
-            <ul>
-              <li>
-                Tallers pràctics de cuina tradicional per a tots els nivells.
-              </li>
-              <li>
-                Xerrades sobre producte de proximitat, pagesia i sostenibilitat.
-              </li>
-              <li>
-                Tast de plats emblemàtics reinterpretats per cuineres locals.
-              </li>
+            <ul class="mt-6 list-disc space-y-2 pl-5 text-base text-black/70">
+              <li>Tallers pràctics de cuina tradicional per a tots els nivells.</li>
+              <li>Xerrades sobre producte de proximitat, pagesia i sostenibilitat.</li>
+              <li>Tast de plats emblemàtics reinterpretats per cuineres locals.</li>
             </ul>
-          </section>
+          </div>
 
-          <aside
-            class="article-body__sidebar"
-            aria-label="Informació pràctica"
-          >
-            <h2>Informació pràctica</h2>
-            <p><strong>Dates:</strong> 12–14 d’abril de 2026</p>
-            <p><strong>Lloc:</strong> Centre Cívic del Carme, Reus</p>
-            <p>
-              <strong>Preu:</strong> Activitats gratuïtes amb aforament limitat.
-            </p>
-            <p>
-              <strong>Inscripcions:</strong> A través del formulari que
-              trobaràs a la pàgina “Programa i contacte”.
-            </p>
-          </aside>
+          <include src="./views/components/article-feature.html"></include>
         </div>
       </article>
     </main>

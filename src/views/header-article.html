@@ -1,41 +1,38 @@
-<header class="site-header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+<header class="sticky top-0 z-50 border-b border-black/5 bg-white/70 backdrop-blur">
+  <div class="container-page flex items-center justify-between py-4">
+    <a href="index.html" class="no-underline">
+      <span class="text-base font-extrabold tracking-tight" style="color: var(--color-dark);">
+        <i class="fa-solid fa-utensils mr-2" aria-hidden="true"></i>
         Jornades de Cuina Tradicional
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-6 md:flex" aria-label="Navegació principal">
+      <a href="index.html" class="no-underline text-sm font-semibold text-black/70 hover:text-black">
+        Inici
       </a>
+      <a href="speakers.html" class="no-underline text-sm font-semibold text-black/70 hover:text-black">
+        Ponents
+      </a>
+      <a href="article.html" aria-current="page" class="no-underline text-sm font-extrabold text-black">
+        Article
+      </a>
+      <a href="info.html" class="no-underline text-sm font-semibold text-black/70 hover:text-black">
+        Programa i contacte
+      </a>
+      <a href="ia-figma.html" class="no-underline text-sm font-semibold text-black/70 hover:text-black">
+        Concursants
+      </a>
+    </nav>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Commuta la navegació"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto site-nav">
-          <li class="nav-item site-nav__item">
-            <a class="nav-link" href="index.html" aria-current="page">Inici</a>
-          </li>
-          <li class="nav-item site-nav__item">
-            <a class="nav-link" href="speakers.html">Ponents</a>
-          </li>
-          <li class="nav-item site-nav__item">
-            <a class="nav-link" href="article.html" aria-current="page">
-              Article
-            </a>
-          </li>
-          <li class="nav-item site-nav__item">
-            <a class="nav-link" href="info.html">Programa i contacte</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <button
+      type="button"
+      class="inline-flex items-center justify-center rounded-xl bg-white/80 p-3 text-black/80 md:hidden"
+      aria-label="Obrir menú"
+      title="Menú"
+      style="border: 1px solid var(--color-border-subtle);"
+    >
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </div>
 </header>
